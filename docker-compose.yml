@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  calculation-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: calculation-service
+    ports:
+      - "8080:8080"
+    restart: always
+
+
